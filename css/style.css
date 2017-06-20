@@ -19,7 +19,7 @@ html {
 body {
   height: 100%;
   width: 1130px;
-  background: #000;
+  background: #f3f3f3;
   margin: 0 auto;
   box-shadow: 1px 0px 40px #262626;
   display: block;
@@ -93,6 +93,12 @@ body {
 .standard_text {
   font-family: questrialregular, arial, sans-serif;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+.muted_link, .muted_link:active, .muted_link:visited {
+  text-decoration: none;
+  color: inherit;
+  background: none;
 }
 
 .no_margin {
