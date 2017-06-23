@@ -35,7 +35,7 @@ body {
 
 h1 {
   position: absolute;
-  margin: 0 0 0 200px;
+  margin: 0 0 0 210px;
   font-family: acre, tahoma, sans-serif;
   font-variant: small-caps;
 }
@@ -50,13 +50,15 @@ h1 {
 
 #logo_image {
   position: absolute;
+  z-index: 3;
   margin: 3px 0 0 15px;
-  background-image: url("../images/ea_logo.png");
   width: 185px;
   height: 113px;
 }
 
 #navbar_wrapper {
+  position: relative;
+  z-index: 2;
   height:44px;
   background: #141414;
 }
@@ -67,6 +69,61 @@ h1 {
   padding-left: 220px;
 }
 
+#social {
+  position:absolute;
+  background: #141414;
+  border-radius: 5px;
+  top: 47px;
+  left: 850px;
+  z-index: 1;
+}
+
+#social ul {
+  display: table;
+  margin: 4px;
+}
+
+#social ul li, #social ul li a {
+  display: table-cell;
+  box-sizing: border-box;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  margin: 3px;
+}
+
+#facebook_icon, #twitter_icon, #linkedin_icon {
+  width: 20px;
+  height: 20px;
+  margin: 3px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+#facebook_icon {
+  background: url("../images/sprites/sprite.png") 0px 21px;
+}
+
+#facebook_icon:hover {
+  background: url("../images/sprites/sprite.png") 21px 21px;
+}
+
+#twitter_icon {
+  background: url("../images/sprites/sprite.png") 0px 41px;
+}
+
+#twitter_icon:hover {
+  background: url("../images/sprites/sprite.png") 21px 41px;
+}
+
+#linkedin_icon {
+  background: url("../images/sprites/sprite.png") 0px 61px;
+}
+
+#linkedin_icon:hover {
+  background: url("../images/sprites/sprite.png") 21px 61px;
+}
 .navlist li {
   display: table-cell;
   padding: 13px;
@@ -113,6 +170,7 @@ h1 {
   stroke-width: 2px;
   stroke-linecap: square;
   stroke-linejoin: round;
+  stroke-opacity: 1;
 }
 
 .standard_text {
