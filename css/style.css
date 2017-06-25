@@ -25,7 +25,6 @@ html {
 }
 
 body {
-  height: 100%;
   width: 1130px;
   background: #f3f3f3;
   margin: 0 auto;
@@ -124,6 +123,30 @@ h1 {
 #linkedin_icon:hover {
   background: url("../images/sprites/sprite.png") 21px 61px;
 }
+
+#main_wrapper {
+  display: table;
+}
+
+#main {
+  display: table-cell;
+  width: 830px;
+  vertical-align: top;
+}
+
+#sidebar {
+  display: table-cell;
+  width: 300px;
+  vertical-align: top;
+}
+
+#sidebar table th, #sidebar table td {
+  border: none;
+  vertical-align: top;
+  text-align: left;
+  font-size: 11pt;
+}
+
 .navlist li {
   display: table-cell;
   padding: 13px;
@@ -173,6 +196,16 @@ h1 {
   stroke-opacity: 1;
 }
 
+.headline {
+  font-size: 14pt;
+  font-family: acre;
+  text-align: justify;
+}
+
+.centred {
+  margin: 10px auto;
+}
+
 .standard_text {
   font-family: questrialregular, arial, sans-serif;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
@@ -182,6 +215,10 @@ h1 {
   text-decoration: none;
   color: inherit;
   background: none;
+}
+
+.medium_margin {
+  margin: 30px;
 }
 
 .no_margin {
