@@ -161,6 +161,10 @@ hr {
   width: 800px;
 }
 
+.full_main {
+  width: 1130px;
+}
+
 .standard_sidebar {
   width: 330px
 }
@@ -281,4 +285,21 @@ hr {
 
 .no_padding {
   padding: 0;
+}
+
+/* Our Team Tables */
+#team_table {
+  margin: 20px auto;
+}
+
+#team_table th {
+  padding: 6px 3px;
+}
+
+#management_team {
+  display: block
+}
+
+#kohima_ho, #finance_team, #dimapur_team, #mok_team, #pfo_team {
+  display: none;
 }
