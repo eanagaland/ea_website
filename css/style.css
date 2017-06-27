@@ -54,8 +54,8 @@ h3 {
 hr {
   border: 0;
   height: 1px;
-  background: #333333;
-  background-image: linear-gradient(to right, #cccccc, #333333, #cccccc);
+  background: #351800;
+  background-image: linear-gradient(to right, #ffe9d3, #924200, #ffe9d3);
 }
 
 #header_image {
@@ -261,6 +261,15 @@ hr {
   font-size: 12pt;
 }
 
+.standard_link {
+  text-decoration: none;
+  color: #0800ff;
+}
+
+.standard_link:hover {
+  color: #5954ff;
+}
+
 .muted_link, .muted_link:active, .muted_link:visited {
   text-decoration: none;
   color: inherit;
@@ -273,6 +282,10 @@ hr {
 
 .medium_margin {
   margin: 30px;
+}
+
+.large_margin {
+  margin: 30px 60px;
 }
 
 .medium_padding {
