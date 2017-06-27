@@ -287,6 +287,10 @@ hr {
   padding: 0;
 }
 
+.spaced_list li {
+  margin-bottom: 10px;
+}
+
 /* Our Team Tables */
 #team_table {
   margin: 20px auto;
@@ -363,3 +367,4 @@ hr {
 .email:hover {
   color: #ff0000;
 }
+/* END Team Tables */
