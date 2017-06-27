@@ -21,7 +21,7 @@
 html {
   width: 100%;
   height: 100%;
-  background: #8f8f8f;
+  background: #4e4e4e;
 }
 
 body {
@@ -290,10 +290,12 @@ hr {
 /* Our Team Tables */
 #team_table {
   margin: 20px auto;
+  border-spacing: 0px;
 }
 
 #team_table th {
-  padding: 6px 3px;
+  padding: 6px;
+  cursor: pointer;
 }
 
 #management_team {
@@ -302,4 +304,62 @@ hr {
 
 #kohima_ho, #finance_team, #dimapur_team, #mok_team, #pfo_team {
   display: none;
+}
+
+#team_table .inactive_team, #team_table .active_team, #team_table .solo_content_cell {
+  border: solid black 1px;
+}
+
+#team_table .solo_content_cell {
+  border-top: none;
+}
+
+#team_table .solo_content_cell div table {
+  padding: 30px 10px;
+  margin: auto;
+}
+
+#team_table .solo_content_cell div table td {
+  padding: 0 10px 10px 10px;
+  vertical-align: top;
+  border: none;
+  border-left: dotted #9c9c9c 1px;
+}
+
+#team_table .active_team {
+  border-bottom: none;
+}
+
+#team_table .no_border_row {
+  border: none;
+}
+
+.inactive_team {
+  font-weight: normal;
+  background: #babeff;
+
+  -webkit-transition: background-color 300ms linear;
+  -moz-transition: background-color 300ms linear;
+  -o-transition: background-color 300ms linear;
+  -ms-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
+}
+
+.inactive_team:hover {
+  background: #8c93ff;
+}
+
+.team_mate {
+  font-weight: bold;
+  color: #08006b;
+}
+
+.email {
+  font-size: 10pt;
+  text-decoration: none;
+  color: #690000;
+}
+
+.email:hover {
+  color: #ff0000;
 }
