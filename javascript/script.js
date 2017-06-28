@@ -23,11 +23,11 @@ $(document).ready(function() {
              'pt': 'pfo_team'};
     active_team = $('.active_team');
     /* Hide deselected team div, and set to inactive class */
-    $('#' + teams[active_team.id]).css('display', 'none');
+    $('#' + teams[active_team.attr('id')]).css('display', 'none');
     active_team.removeClass('active_team');
     active_team.addClass('inactive_team');
     /* Show selected team div, and set to active class */
-    $('#' + teams[$(this).id]).css('display', 'block');
+    $('#' + teams[$(this).attr('id')]).css('display', 'block');
     $(this).removeClass('inactive_team');
     $(this).addClass('active_team');
   });

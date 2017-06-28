@@ -316,11 +316,13 @@ hr {
 }
 
 #management_team {
-  display: block
+  display: block;
+  height: 320px;
 }
 
 #kohima_ho, #finance_team, #dimapur_team, #mok_team, #pfo_team {
   display: none;
+  height: 320px;
 }
 
 #team_table .inactive_team, #team_table .active_team, #team_table .solo_content_cell {
