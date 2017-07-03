@@ -6,6 +6,7 @@ $(document).ready(function() {
       $('ul', this).slideUp('fast');
     }
   );
+
   $('#our_programmes').hover(
     function () {
       $('ul', this).slideDown('fast');
@@ -30,5 +31,19 @@ $(document).ready(function() {
     $('#' + teams[$(this).attr('id')]).css('display', 'block');
     $(this).removeClass('inactive_team');
     $(this).addClass('active_team');
+  });
+
+  $('#show_twitter_wrapper').on('click', function() {
+    $(this).slideUp(600, 'easeInBack', function(){
+      $('#twitter_wrapper').slideDown();
+      }
+    );
+  });
+
+  $('#hide_twitter_wrapper').on('click', function() {
+    $('#twitter_wrapper').slideUp( function(){
+      $('#show_twitter_wrapper').slideDown(600, 'easeOutBack');
+      }
+    );
   });
 });

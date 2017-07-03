@@ -41,6 +41,7 @@ h1 {
   position: absolute;
   margin: 0 0 0 210px;
   font-variant: small-caps;
+  font-size: 40pt;
 }
 
 h2 {
@@ -92,7 +93,7 @@ hr {
   background: #141414;
   border-radius: 5px;
   top: 47px;
-  left: 930px;
+  margin-left: 770px;
   z-index: 1;
 }
 
@@ -107,7 +108,55 @@ hr {
   cursor: pointer;
   width: 20px;
   height: 20px;
-  margin: 3px;
+  margin: 3px;'
+}
+
+#twitter_wrapper {
+  display: none;
+  position: absolute;
+  top: 116px;
+  margin-left: 600px;
+  background: #141414;
+  border-radius: 0 0 6px 6px;
+}
+
+#twitter_wrapper iframe {
+  padding: 3px !important; /* To override styling from twitter */
+}
+
+#show_twitter_wrapper, #hide_twitter_wrapper {
+  position: absolute;
+  background: #141414;
+  color: #9c9c9c;
+  font-family: questrialregular, Arial, sans-serif;
+}
+
+#show_twitter_wrapper {
+  display: block;
+  margin-left: 710px;
+  border-radius: 0 0 5px 5px;
+  font-size: 9pt;
+  padding: 5px;
+  top: 113px;
+}
+
+#hide_twitter_wrapper {
+  top: 30px;
+  margin-left: 325px;
+  font-size: 11pt;
+  padding: 5px;
+  border-radius: 5px 5px 0 0;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+}
+
+#hide_twitter_wrapper:hover, #show_twitter_wrapper:hover {
+  color: #fff;
+  cursor: pointer;
 }
 
 #facebook_icon, #twitter_icon, #linkedin_icon {
@@ -120,27 +169,43 @@ hr {
 }
 
 #facebook_icon {
-  background: url("../images/sprites/sprite.png") 0px 21px;
+  background: url("../images/sprites/sprite.png") 0px 40px;
 }
 
 #facebook_icon:hover {
-  background: url("../images/sprites/sprite.png") 21px 21px;
+  background: url("../images/sprites/sprite.png") 21px 40px;
 }
 
 #twitter_icon {
-  background: url("../images/sprites/sprite.png") 0px 41px;
+  background: url("../images/sprites/sprite.png") 0px 81px;
 }
 
 #twitter_icon:hover {
-  background: url("../images/sprites/sprite.png") 21px 41px;
+  background: url("../images/sprites/sprite.png") 21px 81px;
 }
 
 #linkedin_icon {
-  background: url("../images/sprites/sprite.png") 0px 61px;
+  background: url("../images/sprites/sprite.png") 0px 60px;
 }
 
 #linkedin_icon:hover {
-  background: url("../images/sprites/sprite.png") 21px 61px;
+  background: url("../images/sprites/sprite.png") 21px 60px;
+}
+
+#instagram_icon {
+  background: url("../images/sprites/sprite.png") 0px 20px;
+}
+
+#instagram_icon:hover {
+  background: url("../images/sprites/sprite.png") 20px 20px;
+}
+
+#youtube_icon {
+  background: url("../images/sprites/sprite.png") 0px 101px;
+}
+
+#youtube_icon:hover {
+  background: url("../images/sprites/sprite.png") 21px 101px;
 }
 
 #main_wrapper {
@@ -228,10 +293,9 @@ hr {
 }
 
 .stroke text {
-  fill: white;
-  stroke: black;
+  fill: #fff;
+  stroke: #141414;
   fill-opacity: 1;
-  font-size: 34pt;
   stroke-width: 2px;
   stroke-linecap: square;
   stroke-linejoin: round;
