@@ -1,21 +1,17 @@
 @font-face {
-  font-family: 'questrialregular';
-  src: url('../fonts/questrial/questrial-regular-webfont.eot'),
-       url('../fonts/questrial/questrial-regular-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/questrial/questrial-regular-webfont.woff2') format('woff2'),
-       url('../fonts/questrial/questrial-regular-webfont.woff') format('woff'),
-       url('../fonts/questrial/questrial-regular-webfont.ttf') format('truetype'),
-       url('../fonts/questrial/questrial-regular-webfont.svg#questrialregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
+  font-family: "questrialregular";
+  src: url("../fonts/questrial/questrial-regular-webfont.eot");
+  src: url("../fonts/questrial/questrial-regular-webfont.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/questrial/questrial-regular-webfont.woff2") format("woff2"),
+       url("../fonts/questrial/questrial-regular-webfont.woff") format("woff"),
+       url("../fonts/questrial/questrial-regular-webfont.ttf") format("truetype"),
+       url("../fonts/questrial/questrial-regular-webfont.svg#questrialregular") format("svg");
 }
 
 @font-face {
-  font-family: 'acre';
-  src: url('../fonts/acre/acre-medium-webfont.woff2') format('woff2'),
-       url('../fonts/acre/acre-medium-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+  font-family: "acre";
+  src: url("../fonts/acre/acre-medium-webfont.woff2") format("woff2"),
+       url("../fonts/acre/acre-medium-webfont.woff") format("woff");
 }
 
 html {
@@ -33,7 +29,7 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: acre, tahoma, sans-serif;
+  font-family: acre, Arial, sans-serif;
   font-weight: bold;
 }
 
@@ -60,6 +56,7 @@ hr {
 }
 
 #header_image {
+  background: #e61f26; /* This overrides the image */
   background-image: url("../images/header.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -108,7 +105,7 @@ hr {
   cursor: pointer;
   width: 20px;
   height: 20px;
-  margin: 3px;'
+  margin: 3px;
 }
 
 #twitter_wrapper {
@@ -118,6 +115,7 @@ hr {
   margin-left: 600px;
   background: #141414;
   border-radius: 0 0 6px 6px;
+  box-shadow: 1px 0px 40px #262626;
 }
 
 #twitter_wrapper iframe {
@@ -290,6 +288,12 @@ hr {
 
 .dropdown li:hover {
   background-color: #c5ad81;
+}
+
+.article_img {
+  margin: 0 10px;
+  border-top: solid 4px #141414;
+  border-bottom: solid 4px #141414;
 }
 
 .stroke text {
