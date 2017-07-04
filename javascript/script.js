@@ -34,6 +34,7 @@ $(document).ready(function() {
   });
 
   $('#show_twitter_wrapper').on('click', function() {
+    $('#social').slideUp(600, 'easeInBack')
     $(this).slideUp(600, 'easeInBack', function(){
       $('#twitter_wrapper').slideDown();
       }
@@ -43,6 +44,7 @@ $(document).ready(function() {
   $('#hide_twitter_wrapper').on('click', function() {
     $('#twitter_wrapper').slideUp( function(){
       $('#show_twitter_wrapper').slideDown(600, 'easeOutBack');
+      $('#social').slideDown(600, 'easeOutBack')
       }
     );
   });
