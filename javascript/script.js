@@ -34,7 +34,8 @@ $(document).ready(function() {
   });
 
   $('#show_twitter_wrapper').on('click', function() {
-    $(this).slideUp(600, 'easeInBack', function(){
+    $('#social').slideUp(600, 'swing')
+    $(this).slideUp(600, 'swing', function(){
       $('#twitter_wrapper').slideDown();
       }
     );
@@ -42,7 +43,8 @@ $(document).ready(function() {
 
   $('#hide_twitter_wrapper').on('click', function() {
     $('#twitter_wrapper').slideUp( function(){
-      $('#show_twitter_wrapper').slideDown(600, 'easeOutBack');
+      $('#show_twitter_wrapper').slideDown(600, 'swing');
+      $('#social').slideDown(600, 'swing')
       }
     );
   });
