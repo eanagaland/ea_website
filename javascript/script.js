@@ -49,18 +49,16 @@ $(document).ready( function() {
       $('#dropdown_back1').slideDown('fast', function() {
         $('#about_dropdown').fadeIn('fast');
         $('#dropdown_image1').fadeIn('fast');
-        setTimeout( function() {
-          $('#social').slideUp('fast');
-          $('#show_twitter_wrapper').slideUp('fast');
-        }, 100);
+        $('#social').slideUp('fast');
+        $('#show_twitter_wrapper').slideUp('fast');
       });
     }, function () {
-      $('#social').slideDown('fast');
-      $('#show_twitter_wrapper').slideDown('fast');
       setTimeout( function() {
         $('#about_dropdown').fadeOut('fast', function() {
           $('#dropdown_image1').fadeOut('fast');
           $('#dropdown_back1').slideUp('fast');
+          $('#social').slideDown('fast');
+          $('#show_twitter_wrapper').slideDown('fast');
         });
       }, 600);
     }
@@ -70,18 +68,16 @@ $(document).ready( function() {
       $('#dropdown_back2').slideDown('fast', function() {
         $('#programmes_dropdown').fadeIn('fast');
         $('#dropdown_image2').fadeIn('fast');
-        setTimeout( function() {
-          $('#social').slideUp('fast');
-          $('#show_twitter_wrapper').slideUp('fast');
-        }, 100);
+        $('#social').slideUp('fast');
+        $('#show_twitter_wrapper').slideUp('fast');
       });
     }, function () {
-      $('#social').slideDown('fast');
-      $('#show_twitter_wrapper').slideDown('fast');
       setTimeout( function() {
         $('#programmes_dropdown').fadeOut('fast', function() {
           $('#dropdown_image2').fadeOut('fast');
           $('#dropdown_back2').slideUp('fast');
+          $('#social').slideDown('fast');
+          $('#show_twitter_wrapper').slideDown('fast');
         });
       }, 600);
     }
@@ -153,8 +149,6 @@ $(document).ready( function() {
       }
     );
   });
-});
-
 // TEAM TABLE
   $('#team_table th').on('click', function() {
     teams = {'mn': 'management_team',
@@ -173,3 +167,9 @@ $(document).ready( function() {
     $(this).removeClass('inactive_team');
     $(this).addClass('active_team');
   });
+// SET FOOTER COPYRIGHT YEAR
+  $('.current_year').each( function() {
+    $(this).html( (new Date).getFullYear() );
+  });
+});
+
