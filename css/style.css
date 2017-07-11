@@ -225,6 +225,14 @@ hr {
   vertical-align: top;
 }
 
+#footer {
+  position: absolute;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  background: #2d2d2d;
+}
+
 .inline_flex_override {
   display: inline-flex !important;
 }
@@ -440,6 +448,10 @@ hr {
   margin-bottom: 10px;
 }
 
+.margin20top {
+  margin-top: 20px;
+}
+
 .margin50top {
   margin-top: 50px;
 }
@@ -483,6 +495,10 @@ hr {
 
 .partner_image p span {
   font-size: 12pt;
+}
+
+.white_text {
+  color: #e0e0e0;
 }
 
 /* Our Team Tables */
