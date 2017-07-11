@@ -40,7 +40,8 @@ h1 {
 }
 
 h2 {
-  font-size: 14pt;
+  font-size: 20pt;
+  font-weight: bold;
 }
 
 h3 {
@@ -69,7 +70,7 @@ hr {
 
 #logo_image {
   position: absolute;
-  z-index: 3;
+  z-index: 9;
   margin: 3px 0 0 15px;
   width: 185px;
   height: 113px;
@@ -77,7 +78,7 @@ hr {
 
 #navbar_wrapper {
   position: relative;
-  z-index: 2;
+  z-index: 8;
   height:44px;
   background: #2d2d2d;
 }
@@ -94,7 +95,7 @@ hr {
   border-radius: 5px;
   top: 112px;
   margin-left: 825px;
-  z-index: 1;
+  z-index: 7;
 }
 
 #social ul {
@@ -127,6 +128,7 @@ hr {
 
 #show_twitter_wrapper, #hide_twitter_wrapper {
   position: absolute;
+  z-index: 7;
   background: #2d2d2d;
   color: #b5b5b5;
   font-family: questrialregular, Arial, sans-serif;
@@ -287,16 +289,12 @@ hr {
 
 #dropdown_image1, #dropdown_image2 {
   position: absolute;
+  z-index: 5;
   height: 200px;
   width: 300px;
   left: 610px;
   top: 120px;
   display: none;
-  -webkit-transition: all 200ms linear;
-  -moz-transition: all 200ms linear;
-  -o-transition: all 200ms linear;
-  -ms-transition: all 200ms linear;
-  transition: all 200ms linear;
 }
 
 #about_dropdown {
@@ -310,6 +308,7 @@ hr {
 .dropdown_back {
   background: #e61f26;
   position: absolute;
+  z-index: 4;
   left: 0;
   top: 116px;
   height: 210px;
@@ -322,6 +321,7 @@ hr {
   color: #2d2d2d;
   padding: 5px 0;
   position: absolute;
+  z-index: 6;
   display: none;
 }
 
@@ -340,7 +340,6 @@ hr {
 }
 
 .article_img {
-  margin: 0 10px;
   border-top: solid 4px #2d2d2d;
   border-bottom: solid 4px #2d2d2d;
 }
@@ -441,8 +440,49 @@ hr {
   margin-bottom: 10px;
 }
 
+.margin50top {
+  margin-top: 50px;
+}
+
+.margin80top {
+  margin-top: 80px;
+}
+
 .margin100top {
   margin-top: 100px;
+}
+
+.no_margin_top_bottom {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.partner_image {
+  margin-bottom: -100px;
+}
+
+.partner_image img {
+  position: relative;
+  z-index: 1;
+}
+
+.partner_image p {
+  position: relative;
+  top: -288px;
+  z-index: 2;
+  left: 0;
+  color: white;
+  background: rgba(62, 62, 62, 0.41);
+  width: 255px;
+  padding: 15px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 14pt;
+  line-height: 1.2;
+}
+
+.partner_image p span {
+  font-size: 12pt;
 }
 
 /* Our Team Tables */
