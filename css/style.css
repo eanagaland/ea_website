@@ -39,6 +39,10 @@ h1 {
   font-size: 33pt;
 }
 
+h1 span {
+  display: none;
+}
+
 h2 {
   font-size: 20pt;
   font-weight: bold;
@@ -115,6 +119,7 @@ hr {
 #twitter_wrapper {
   display: none;
   position: absolute;
+  z-index: 99;
   top: 116px;
   margin-left: 600px;
   background: #2d2d2d;
@@ -228,6 +233,7 @@ hr {
 #footer {
   position: absolute;
   left: 0;
+  right: 0;
   height: 100px;
   width: 100%;
   background: #2d2d2d;
@@ -584,5 +590,111 @@ hr {
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   h1 {
     font-size: 40pt;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  body {
+    width: 1024px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  #navbar {
+    display: none;
+  }
+
+  #show_twitter_wrapper {
+    display: none;
+  }
+
+  #logo_image {
+    margin: 38px 0 0 15px;
+    width: 111px;
+    height: 62px;
+  }
+
+  #social {
+    margin-left: 25px;
+  }
+}
+
+/* iPhones and iPads can't handle the layout on the software page.
+
+  iPhone 4 variations*/
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  h1 svg {
+    display: none;
+  }
+
+  h1 span {
+    display: block;
+  }
+}
+/*iPhone 5 variations*/
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    h1 svg {
+    display: none;
+  }
+
+  h1 span {
+    display: block;
+  }
+}
+/*iPhone 6 variations*/
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+  h1 svg {
+    display: none;
+  }
+
+  h1 span {
+    display: block;
+  }
+}
+/* iPad Mini */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+  h1 svg {
+    display: none;
+  }
+
+  h1 span {
+    display: block;
+  }
+}
+/* iPad 1/2 */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+  h1 svg {
+    display: none;
+  }
+
+  h1 span {
+    display: block;
+  }
+/* iPad 3/4 */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  h1 svg {
+    display: none;
+  }
+
+  h1 span {
+    display: block;
   }
 }
