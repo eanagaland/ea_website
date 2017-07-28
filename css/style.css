@@ -270,11 +270,13 @@ hr {
 #main {
   display: table-cell;
   vertical-align: top;
+  margin: 0 auto;
 }
 
 #sidebar {
   display: table-cell;
   vertical-align: top;
+  margin: 0 auto;
 }
 
 #footer {
@@ -284,14 +286,6 @@ hr {
   height: 100px;
   width: 100%;
   background: #2d2d2d;
-}
-
-#standard_address {
-  display: block;
-}
-
-#mobile_address {
-  display: none;
 }
 
 .imagery, .halfimagery {
@@ -580,6 +574,13 @@ hr {
   height: auto;
 }
 
+.mobile_only {
+  display: none;
+}
+
+.non_mobile {
+}
+
 /* Our Team Tables */
 #team_table {
   margin: 20px auto;
@@ -679,6 +680,10 @@ hr {
     width: 100%;
   }
 
+  .full_main {
+    width: 100%;
+  }
+
   .full_width_img {
     width: 100%;
   }
@@ -710,17 +715,25 @@ hr {
     padding: 0;
   }
   /*Where to find us map*/
-  #standard_address {
-  display: none;
+  .non_mobile {
+    display: none;
   }
 
-  #mobile_address {
+  .mobile_only {
     display: block;
   }
   /* end */
 }
 
 @media screen and (max-width: 990px) {
+  h1 svg {
+    display: none !important;
+  }
+
+  h1 span {
+    display: none !important;
+  }
+
   #navbar {
     display: none;
   }
@@ -744,17 +757,24 @@ hr {
     margin: 0 3px;
   }
 
-  h1 svg {
-    display: none !important;
-  }
-
-  h1 span {
-    display: none !important;
-  }
-
   #mobile_nav {
     cursor: pointer;
     display: block;
+  }
+
+  .medium_padding {
+    padding: 15px;
+  }
+
+  .partner_image p {
+    top: -215px;
+  }
+}
+
+@media screen and (max-width: 825px) {
+  .partner_image p {
+    font-size: 10pt;
+    width: 170px;
   }
 }
 
@@ -762,21 +782,82 @@ hr {
   #google_map_id {
     width: 500px;
   }
+
+  #sidebar {
+    margin: 0;
+    padding: 0;
+  }
+
+  #sidebar h3 {
+    margin: 20px 5px 10px 5px;
+  }
+
+  #sidebar p, #sidebar hr, #sidebar ul {
+    margin: 1px 5px;
+  }
+
+  .equal_main {
+    width: 100%;
+  }
+
+  .equal_sidebar {
+    width: 100%;
+  }
+
+  .large_margin {
+    margin: 15px 20px;
+  }
+
+  .partner_image p {
+    top: -100px;
+  }
 }
 
 @media screen and (max-width: 540px) {
-  #sidebar {
-    margin: 0;
+  h2 {
+    text-align: left;
   }
 
   #google_map_id {
     width: 450px;
+  }
+
+  .medium_margin {
+    margin: 10px;
+  }
+
+  .medium_padding {
+    padding: 10px;
+  }
+
+  .small_margin {
+    margin: 0;
+  }
+
+  .partner_image {
+    margin-bottom: 2px;
+  }
+
+  .partner_image p {
+    display: none;
+  }
+
+  .partner_image img {
+    position: static;
   }
 }
 
 @media screen and (max-width: 452px) {
   #google_map_id {
     width: 315px;
+  }
+
+  .large_margin {
+    margin: 15px 5px;
+  }
+
+  .centred_text {
+    text-align: justify;
   }
 }
 
