@@ -765,6 +765,17 @@ hr {
   .medium_padding {
     padding: 15px;
   }
+
+  .partner_image p {
+    top: -215px;
+  }
+}
+
+@media screen and (max-width: 825px) {
+  .partner_image p {
+    font-size: 10pt;
+    width: 170px;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -775,6 +786,14 @@ hr {
   #sidebar {
     margin: 0;
     padding: 0;
+  }
+
+  #sidebar h3 {
+    margin: 20px 5px 10px 5px;
+  }
+
+  #sidebar p, #sidebar hr, #sidebar ul {
+    margin: 1px 5px;
   }
 
   .equal_main {
@@ -788,9 +807,17 @@ hr {
   .large_margin {
     margin: 15px 20px;
   }
+
+  .partner_image p {
+    top: -100px;
+  }
 }
 
 @media screen and (max-width: 540px) {
+  h2 {
+    text-align: left;
+  }
+
   #google_map_id {
     width: 450px;
   }
@@ -806,11 +833,31 @@ hr {
   .small_margin {
     margin: 0;
   }
+
+  .partner_image {
+    margin-bottom: 2px;
+  }
+
+  .partner_image p {
+    display: none;
+  }
+
+  .partner_image img {
+    position: static;
+  }
 }
 
 @media screen and (max-width: 452px) {
   #google_map_id {
     width: 315px;
+  }
+
+  .large_margin {
+    margin: 15px 5px;
+  }
+
+  .centred_text {
+    text-align: justify;
   }
 }
 
