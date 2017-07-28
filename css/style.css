@@ -106,8 +106,8 @@ hr {
   position: absolute;
   font-family: acre;
   font-size: 40pt;
-  padding-left: 160px;
-  margin-top: -25px;
+  right: 45px;
+  top: -25px;
 }
 
 #mobile_about_options, #mobile_prog_options, #mobile_nav_options {
@@ -121,7 +121,7 @@ hr {
 
 #mobile_nav_options {
   top: 116px;
-  left: 20px;
+  right: 20px;
   z-index: 22;
 }
 
@@ -271,6 +271,11 @@ hr {
   display: table-cell;
   vertical-align: top;
   margin: 0 auto;
+  text-align: center;
+}
+
+#main p {
+  text-align: justify;
 }
 
 #sidebar {
@@ -716,7 +721,7 @@ hr {
   }
   /*Where to find us map*/
   .non_mobile {
-    display: none;
+    display: none !important;
   }
 
   .mobile_only {
@@ -775,6 +780,10 @@ hr {
   .partner_image p {
     font-size: 10pt;
     width: 170px;
+  }
+
+  .imagery {
+    width: 90%;
   }
 }
 
@@ -844,6 +853,15 @@ hr {
 
   .partner_image img {
     position: static;
+  }
+
+  .article_img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .halfimagery, .youtube_vid {
+    width: 100%;
   }
 }
 
