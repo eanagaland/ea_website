@@ -286,6 +286,14 @@ hr {
   background: #2d2d2d;
 }
 
+#standard_address {
+  display: block;
+}
+
+#mobile_address {
+  display: none;
+}
+
 .imagery, .halfimagery {
   vertical-align: top;
 }
@@ -658,13 +666,21 @@ hr {
   }
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1131px) {
   body {
-    width: 1024px;
+    width: 100%;
+  }
+
+  #main_wrapper, #main, #sidebar {
+    display: block !important;
+  }
+
+  .standard_main {
+    width: 100%;
   }
 
   .full_width_img {
-    width: 1024px;
+    width: 100%;
   }
 
   .imagery {
@@ -674,6 +690,34 @@ hr {
   .halfimagery {
     width: 49%;
   }
+}
+
+@media screen and (max-width: 1010px) {
+  #sidebar table {
+    margin: 0 auto;
+  }
+
+  .inline_flex_override {
+    display: block !important;
+  }
+
+  .medium_margin {
+    margin: 15px;
+  }
+
+  .pop_out_box {
+    box-shadow: none;
+    padding: 0;
+  }
+  /*Where to find us map*/
+  #standard_address {
+  display: none;
+  }
+
+  #mobile_address {
+    display: block;
+  }
+  /* end */
 }
 
 @media screen and (max-width: 990px) {
@@ -711,6 +755,18 @@ hr {
   #mobile_nav {
     cursor: pointer;
     display: block;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #google_map_id {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #google_map_id {
+    width: 450px;
   }
 }
 
