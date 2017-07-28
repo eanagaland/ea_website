@@ -132,6 +132,52 @@ $(document).ready( function() {
   }, function () {
     setNavbarImg('default');
   });
+// NAVBAR FOR MOBILE USERS
+  $('#mobile_nav p').on('click', function() {
+    mobNav   = $(this);
+    mainNav  = $('#mobile_nav_options');
+    aboutNav = $('#mobile_about_options');
+    progNav  = $('#mobile_prog_options');
+
+    if (aboutNav[0].style.display === 'block') {
+      aboutNav.slideUp('fast');
+    } else if (progNav[0].style.display === 'block') {
+      progNav.slideUp('fast');
+    };
+
+    setTimeout( function() {
+      if (mainNav[0].style.display === 'block') {
+        mainNav.slideUp('fast');
+        mobNav.removeClass('white_text');
+      } else {
+        mainNav.slideDown('fast');
+        mobNav.addClass('white_text');
+      };
+    }, 500);
+  });
+
+  $('#mob_prog').on('click', function() {
+    $('#mobile_prog_options').slideDown('fast');
+  });
+
+  $('#mobile_back_prog').on('click', function() {
+    $('#mobile_prog_options').slideUp('fast');
+  });
+
+  $('#mob_about').on('click', function() {
+    $('#mobile_about_options').slideDown('fast');
+  });
+
+  $('#mobile_back_about').on('click', function() {
+    $('#mobile_about_options').slideUp('fast');
+  });
+
+  $(window).on('resize', function() {
+    mainNav = $('#mobile_nav_options');
+    if (mainNav[0].style.display === 'block') {
+      mainNav.slideUp('fast');
+    };
+  });
 
 // SOCIAL ICONS AND TWITTER FEED
   $('#show_twitter_wrapper').on('click', function() {
