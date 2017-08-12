@@ -590,6 +590,7 @@ hr {
 #team_table {
   margin: 20px auto;
   border-spacing: 0px;
+  text-align: left;
 }
 
 #team_table th {
